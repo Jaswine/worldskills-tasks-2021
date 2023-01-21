@@ -79,6 +79,6 @@ three positions within the list. If the current player’s position is out of th
     4.The path of the projectile, using the correct image.
     5.The distance.
 - Here is an imaginary result shareable image, the layout is free to be adjusted.
-- 
+
 ![image](https://user-images.githubusercontent.com/82625479/213885527-a8b0b6f6-a103-4f32-b85d-929b316bcb09.png)
 
