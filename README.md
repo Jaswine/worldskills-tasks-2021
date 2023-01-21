@@ -72,4 +72,13 @@ three positions within the list. If the current player’s position is out of th
 
 <h3>Result Sharing</h3>
 - In the end screen, the following image is automatically generated and displayed to the player. A horizontal image that displays the best result of the three attempts with the path of the projectile.
+- The client wants the following elements to be on this shareable image:
+    1.The text Winter Sports Popularization Association.
+    2.The logo for the WSPA.
+    3.The player’s name.
+    4.The path of the projectile, using the correct image.
+    5.The distance.
+- Here is an imaginary result shareable image, the layout is free to be adjusted.
+- 
+![image](https://user-images.githubusercontent.com/82625479/213885527-a8b0b6f6-a103-4f32-b85d-929b316bcb09.png)
 
