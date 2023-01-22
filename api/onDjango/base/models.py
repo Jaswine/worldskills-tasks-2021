@@ -10,7 +10,7 @@ class User(models.Model):
   
 class StartGame(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
-  started = models.DateTimeField(auto_now_add=True)
+  started = models.CharField(max_length=100)
   angle = models.CharField(max_length=5)
   power = models.CharField(max_length=100)
   
@@ -22,12 +22,12 @@ class EndGame(models.Model):
   startGame = models.CharField(max_length=100);
   angle = models.CharField(max_length=5);
   power = models.CharField(max_length=100);
-  endGame = models.DateTimeField(auto_now_add=True);
+  endGame = models.CharField(max_length=100);
   
   def __str__(self):
       return self.user.name
 
-class FlightModel(models.Model):
+class InFlight(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
   speed = models.CharField(max_length=100)
   x = models.CharField(max_length=100)
@@ -44,7 +44,7 @@ class Bounce(models.Model):
   baseAngle = models.CharField(max_length=100)
   lastAngle = models.CharField(max_length=100)
   power = models.CharField(max_length=100)
-  time = models.DateField(auto_now_add=True)
+  time = models.CharField(max_length=100)
   
   def __str__(self):
     return self.user.name
