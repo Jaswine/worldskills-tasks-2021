@@ -1,0 +1,31 @@
+@import '../../scss/varibles';
+
+.game {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+
+  // background-image: url('../../media/Game_assets/Backgrounds/Sample.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .land1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    img, span {
+      width: 5.6vw;
+      height: 11.6vh;
+    }
+  }
+  .land2, div {
+    img {
+      // height: calc($size * 4);
+    }
+  }
+}

@@ -5,7 +5,7 @@ import Loader from '../UI/Loader/Loader';
 import axios from 'axios';
 
 function Layout({children}) {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true)//!!!INCLUDE!!!
 
   useEffect(() => {
     setTimeout(() =>  {

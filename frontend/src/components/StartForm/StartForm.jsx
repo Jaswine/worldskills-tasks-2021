@@ -17,7 +17,7 @@ function StartForm() {
   const [name, setName] = useState('');
   const [country, setCountry] = useState('');
   const [file, setFile] = useState('');
-  const [showForm, setShowForm] = useState(true);
+  const [showForm, setShowForm] = useState(false) //!!!INCLUDE!!!
 
   const send = async (e) => {
     e.preventDefault();
