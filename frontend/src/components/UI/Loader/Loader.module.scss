@@ -1,0 +1,138 @@
+@import '../../../scss/varibles';
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  &__animation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    // border: 2px solid $lightBlue;
+    width: 100%;
+    max-width: 600px;
+    * {
+      position: absolute;
+      bottom: 0;
+    }
+    .snowman {
+      width: 100px;
+  
+      animation-name: snowbitch;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      bottom: 0;
+    }
+    .igloo {
+      width: 200px;
+      margin: 0;
+      bottom: 0;
+    }
+    .crystal {
+      width: 50px;
+      bottom: 0;
+      left: 14%;
+      animation-name: crystal;
+      animation-duration: 6s;
+      animation-iteration-count: infinite; 
+    }
+    .Tree1 {
+      position: absolute;
+      width: 150px;
+      animation-name: tree;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+    }
+    .Tree2 {
+      position: absolute;
+      width: 150px;
+      right: 30%;
+      position: absolute;
+      width: 150px;
+      animation-name: tree;
+      animation-duration: 6s;
+      animation-iteration-count: infinite; 
+    }
+    .Trees2 {
+      position: absolute;
+      width: 260px;
+      left: 60%;
+    }
+    .trees1 {
+      width: 240px;
+      left: 0;
+    }
+    .sign2 {
+      width: 60px;
+      left: 5%;
+    }
+  }
+}
+
+@keyframes snowbitch {
+  0% {
+    left: 5%;
+    transform: rotate(5deg);
+  }
+  50% {
+    left: 80%;
+    // transform: rotate(-5deg);
+    transform:rotateY(180deg);
+  }
+  100% {
+    left: 5%;
+  }
+}
+
+@keyframes tree {
+  0% {
+
+  }
+  40% {
+    transform: rotate(3deg);
+  }
+  50% {
+    
+  }
+  60% {
+    transform: rotate(-3deg);
+  }
+  100% {
+
+  }
+}
+@keyframes crystal {
+  0% {
+    transform: scale(100%);
+    background-color: transparent;
+    box-shadow: none;
+  }
+  40% {
+    transform: scale(120%);
+    background-color: rgb($lightBlue, .4);
+    box-shadow: 0 0 6px 6px rgb($lightBlue, .4);
+    border-radius: 1000px;
+  }
+  50% {
+    transform: scale(110%);
+    background-color: rgb($lightBlue, .4);
+    box-shadow: 0 0 6px 6px rgb($lightBlue, .4);
+    box-shadow: none;
+  }
+  60% {
+    transform: rotate(120%);
+    background-color: rgb($lightBlue, .4);
+    box-shadow: 0 0 6px 6px rgb($lightBlue, .4);
+  }
+  100% {
+    transform: scale(100%);
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

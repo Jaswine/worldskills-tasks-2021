@@ -1,0 +1,14 @@
+@import '../../../scss/varibles';
+
+.btn {
+  border: 2px solid $primary;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px 0;
+  transition: .2s all ease-in;
+  &:hover {
+    background-color: $gold;
+
+  }
+}

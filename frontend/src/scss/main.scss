@@ -1,0 +1,24 @@
+@import './varibles';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: transparent;
+  color: $primary;
+  border: none;
+  font-size: $size;
+  font-family: $RopaSans;
+}
+body {
+  background-color: $white;
+  color: $primary;
+  font-family: $RopaSans;
+  overflow-x: hidden;
+  font-size: $size;
+}
+
+.icon {
+  font-size: 30px;
+}
