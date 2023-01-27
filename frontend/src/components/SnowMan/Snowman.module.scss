@@ -1,9 +1,17 @@
 @import '../../scss/varibles';
 
+.pre_snowman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 10vw;
+}
 .snowman {
-  width: calc($size * 6 );
-  // height: 100%;
+  width: 9vw;
+  height: 28vh;
   position: fixed;
-  bottom: 33%;
-  left: 10px;
+  top: 47vh;
+  left: 10vw;
+  z-index: 1000000000;
 }

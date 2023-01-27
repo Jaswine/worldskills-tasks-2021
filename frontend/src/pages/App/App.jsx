@@ -3,7 +3,7 @@ import snowman from '../../media/Game_assets/Snowman/snowman.svg';
 import Snowman from '../../components/SnowMan/Snowman';
 import StartForm from '../../components/StartForm/StartForm';
 import Layout from '../../components/Layout/Layout';
-import Game from '../Game/Game';
+import Game from '../../components/Game/Game';
 
 function App() {
   return (

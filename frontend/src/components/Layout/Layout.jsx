@@ -10,7 +10,7 @@ function Layout({children}) {
   useEffect(() => {
     setTimeout(() =>  {
       setLoaded(true)
-    }, 3000)
+    }, 6000)
   }, []);
   
   return (
