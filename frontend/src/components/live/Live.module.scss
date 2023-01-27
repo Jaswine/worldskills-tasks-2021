@@ -1,0 +1,19 @@
+.live {
+  position: fixed;
+  background-color: aliceblue;
+  color: crimson;
+  padding: .2rem .4rem .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  top: 0;
+  right: 5px;
+  font-weight: 400;
+
+  * {
+    color: crimson;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}

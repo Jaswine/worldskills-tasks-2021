@@ -137,10 +137,19 @@ def AddBounce(request):
 @api_view(['GET', 'POST'])
 def gameFinish(request):
   if request.method == 'GET':
-    data = GameFinish.objects.all()
+    data = GameFinish.objects.order_by('result').reverse()
+    list = []
+    count = 0
+    
+    for gamer in data:
+      count += 1
+      if count == 6:
+        break
+      list.append(gamer)
+      
     
     return Response({
-      'users':  GameFinishSerializer(data, many=True).data
+      'users':  GameFinishSerializer(list, many=True).data
     })
     
   if request.method == 'POST':

@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "ead81aba-884b-4050-8f17-494c27a405f6",
+		"name": "European-Competition-2021---Snow-Game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22973800"
+	},
+	"item": [
+		{
+			"name": "is_loaded",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}loaded",
+					"host": [
+						"{{api}}loaded"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start Game Save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Technoblade",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "US",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api}}start-game",
+					"host": [
+						"{{api}}start-game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Throw",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": 9,\r\n    \"started\": \"22.01.2023 18:41\",\r\n    \"angle\": 60,\r\n    \"power\": 70\r\n}"
+				},
+				"url": {
+					"raw": "{{api}}save-throw",
+					"host": [
+						"{{api}}save-throw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Game Over",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": 9,\r\n    \"startGame\": \"22.01.2023 19:01\",\r\n    \"angle\": 60,\r\n    \"power\": 70,\r\n    \"endGame\": \"22.01.2023 19:02\"\r\n}"
+				},
+				"url": {
+					"raw": "{{api}}game-over",
+					"host": [
+						"{{api}}game-over"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "In Flight",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": 9,\r\n    \"speed\": 50,\r\n    \"x\": 30,\r\n    \"y\": 70\r\n}"
+				},
+				"url": {
+					"raw": "{{api}}in-flight",
+					"host": [
+						"{{api}}in-flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bounce",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": 11,\r\n    \"speed\": 50,\r\n    \"baseAngle\": 30,\r\n    \"lastAngle\": 70,\r\n    \"power\": 67\r\n}"
+				},
+				"url": {
+					"raw": "{{api}}bounce",
+					"host": [
+						"{{api}}bounce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Game Finish",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": 8,\r\n    \"result\": \"4s\"\r\n}"
+				},
+				"url": {
+					"raw": "{{api}}game-finish",
+					"host": [
+						"{{api}}game-finish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 5 Gamers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{api}}game-finish",
+					"host": [
+						"{{api}}game-finish"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "http://127.0.0.1:8000/api/"
+		}
+	]
+}

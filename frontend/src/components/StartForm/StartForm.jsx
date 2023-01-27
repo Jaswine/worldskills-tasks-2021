@@ -17,20 +17,23 @@ function StartForm() {
   const [name, setName] = useState('');
   const [country, setCountry] = useState('');
   const [file, setFile] = useState('');
-  const [showForm, setShowForm] = useState(false) //!!!INCLUDE!!!
+  const [showForm, setShowForm] = useState(true) //!!!INCLUDE!!!
 
   const send = async (e) => {
     e.preventDefault();
 
-    // localStorage.setItem('name', name);
-    // localStorage.setItem('country', country);
+    localStorage.removeItem('name');
+    localStorage.removeItem('country');
+    
+    localStorage.setItem('name', name);
+    localStorage.setItem('country', country);
 
-    // axios.post('http://127.0.0.1:8000/api/start-game', {
-    //   name: name, 
-    //   country: country,
-    //   image: file
-    // })
-    //   .then(res => console.log(res.data.data))
+    axios.post('http://127.0.0.1:8000/api/start-game', {
+      name: name, 
+      country: country,
+      image: file
+    })
+      .then(res => console.log(res.data.data))
       setShowForm(false)
   }
 
@@ -52,6 +55,7 @@ function StartForm() {
           <option value="UK">the United Kingdom</option>
           <option value="US">the United States</option>
           <option value="CN">China</option>
+          <option value="KZ">Kazakhstan</option>
           <option value="MX">Mexico</option>
         </select>
         <span className={styles.get_files}>

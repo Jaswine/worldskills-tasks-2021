@@ -25,11 +25,12 @@ import Eighteen from '../../media/Game_assets/Tiles/18.png';
 import Snowman from '../SnowMan/Snowman';
 import Subjects from '../Subjects/Subjects';
 
-function Game() {
+function Game(props) {
+
   return (
     <div className={styles.game}>
       <Subjects/>
-      <Snowman/>
+      <Snowman live={props.live} setLive={props.setLive} />
       <div className={`${styles.land1} ${styles.land2}`}>
         <span></span>
         <span></span>
