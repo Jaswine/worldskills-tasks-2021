@@ -1,6 +1,8 @@
 # European-Competition-2021---Snow-Game
 European Competition 2021 - TEST PROJECT -Final version
 
+<h4>Я не успел сделать многого ибо, кроме игры с ворлдскилса, я никогда не создавал игры, особенно на React, но я предпочитаю использовать именно его, а не чистый js, поэтому многого можете не ожидать.</h4>
+
 <h2>Resume</h2>
 
 <h3>Design and layout</h3>
