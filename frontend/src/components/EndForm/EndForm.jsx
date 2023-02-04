@@ -13,7 +13,6 @@ function EndForm() {
   const [winnerCountry, setWinnerCountry] = useState('');
   const [winnerScores, setWinnerScores] = useState('');
 
-
   useEffect(() => {
     getWinners();
     getWinnerData();
@@ -22,21 +21,27 @@ function EndForm() {
   const getWinners = async () => {
     axios.get('http://127.0.0.1:8000/api/game-finish')
       .then(res => {
-        console.log(res.data.users)
-        setWinners(res.data.users)
+        console.log(res.data.data)
+        setWinners(res.data.data)
       });
   }
 
   const getWinnerData = () => {
     setWinnerName(localStorage.getItem('name'));
-    console.log(localStorage.getItem('name'))
     setWinnerCountry(localStorage.getItem('country'));
     setWinnerScores(localStorage.getItem('scores'))
+
+    axios.post('http://127.0.0.1:8000/api/game-finish', {
+      user: localStorage.getItem('user_id'),
+      result:  localStorage.getItem('scores'),
+    })
+      .then((res) => {
+        console.log(res)
+      })
   }
 
   const reload = () => {
     window.location.reload();
-    
   }
 
   return (

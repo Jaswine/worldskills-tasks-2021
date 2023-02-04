@@ -18,6 +18,7 @@ function StartForm() {
   const [country, setCountry] = useState('');
   const [file, setFile] = useState('');
   const [showForm, setShowForm] = useState(true) //!!!INCLUDE!!!
+  const [userId, setUserId] = useState(1);
 
   const send = async (e) => {
     e.preventDefault();
@@ -33,7 +34,11 @@ function StartForm() {
       country: country,
       image: file
     })
-      .then(res => console.log(res.data.data))
+      .then(res => {
+        setUserId(res.data.data.id);
+        console.log(res.data.data.id)
+        localStorage.setItem('user_id',res.data.data.id);
+      })
       setShowForm(false)
   }
 
