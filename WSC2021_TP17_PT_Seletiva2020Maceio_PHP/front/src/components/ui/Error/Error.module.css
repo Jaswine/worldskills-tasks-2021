@@ -1,0 +1,18 @@
+.error {
+   background-color: #0a0a0a;
+   position: fixed;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   max-width: 500px;
+   padding: 5% 10%;
+   row-gap: 10px;
+}
+
+.error p {
+   font-size: 20px;
+   color: rgb(216, 2, 74);
+   
+}

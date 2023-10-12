@@ -1,0 +1,16 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   padding: 5px 10%;
+   align-items: center;
+   height: 60px;
+   width: 100%;
+   border-bottom: 1px solid rgb(97, 97, 97);
+   box-shadow: 5px 5px 10px rgb(216, 2, 74, .9);
+}
+.header a h2 {
+   color: rgb(216, 2, 74);
+   border-radius: 5px;
+   padding: 0 10px;
+   font-size: 32px;
+}

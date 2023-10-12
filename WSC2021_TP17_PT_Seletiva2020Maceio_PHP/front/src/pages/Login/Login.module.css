@@ -1,0 +1,34 @@
+.form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   max-width: 400px;
+   margin-top: 10%;
+   border: 1px solid rgb(254,254,254,.5);
+   padding: 4% 6%;
+   border-radius: 10px;
+   row-gap: 10px;
+}
+.form input {
+   background-color: transparent;
+   border-radius: 10px;
+   border: 1px solid rgb(254,254,254,.5);
+   color: white;
+   padding: 6px 12px;
+   font-size: 20px;
+   transition: all .3s ease
+}
+.form input:hover{
+   border: 1px solid rgb(216, 2, 74);
+   color: rgb(216, 2, 74)  ;
+}
+.form input:focus{
+   border: 1px solid rgb(216, 2, 74);
+   color: rgb(216, 2, 74)  ;
+}
+.error {
+   color: rgb(216, 2, 74)  ;
+   font-size: 18px;
+}

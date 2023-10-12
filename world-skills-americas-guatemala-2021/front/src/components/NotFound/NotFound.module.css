@@ -1,0 +1,6 @@
+.notFound {
+   @apply flex justify-center items-center flex-col w-full h-screen text-2xl 
+}
+.notFound h2 a {
+   @apply text-pink-600 hover:text-pink-800 delay-300 transition-all ease-linear
+}

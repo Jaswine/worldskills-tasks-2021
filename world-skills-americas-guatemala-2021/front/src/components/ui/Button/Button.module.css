@@ -1,0 +1,6 @@
+.button {
+   @apply bg-pink-600 text-white font-bold p-4 rounded hover:bg-white hover:text-black delay-200 transition-all ease-linear;  
+}
+.dis {
+   @apply opacity-10 cursor-auto hover:bg-pink-600 hover:text-white
+}

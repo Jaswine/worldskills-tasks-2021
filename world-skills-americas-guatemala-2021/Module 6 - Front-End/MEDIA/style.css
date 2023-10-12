@@ -1,0 +1,16 @@
+body{
+	background-color: #EEEDE9;
+}
+
+.container .left{
+	height: calc(100vh - 100px);
+    margin-top: 50px;
+    background-color: #f59081;
+}
+
+.container .right{
+	height: calc(100vh - 100px);
+    margin-top: 50px;
+
+    background-color: #2bb1ff;
+}

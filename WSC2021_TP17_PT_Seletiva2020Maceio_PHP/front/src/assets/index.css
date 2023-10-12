@@ -1,0 +1,56 @@
+
+/* base reset */
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   outline: none;
+}
+/* body */
+body {
+   background-color: #0a0a0a;
+   color: #efefef;
+   font-size: 20px;
+   font-family: 'Courier New', Courier, monospace;
+}
+/* /link */
+a {
+   color: rgb(254,254,254,.8);
+   font-size: 20px;
+   transition: all .3s ease;
+   border-radius: 5px;
+   padding: 5px 10px;
+   font-weight: bold;
+}
+a:hover {
+   color: rgb(216, 2, 74);
+}
+
+/* scroll */
+::-webkit-scrollbar {
+   background-color: rgb(254,254,254,.1);
+   width: 10px;
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgb(216, 2, 74);
+   border-radius: 10px;
+}
+
+/* selection */
+::selection {
+   background-color: rgb(216, 2, 74);
+   color: white;
+}
+
+.textarea__error {
+   border: 2px solid rgb(216,2,74, .4) !important;
+   background-color: rgb(216, 2, 74, .4) !important;
+   transition: all .3s linear;
+}
+
+.textarea__go {
+   border: 2px solid rgba(2, 216, 20, 0.4) !important;
+   background-color: rgba(2, 216, 20, 0.4) !important;
+   transition: all .3s linear;
+}

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   @apply box-border p-0 m-0;
+}
+body {
+   @apply bg-gray-900 text-gray-50 overflow-x-hidden text-lg font-mono;
+}
+
+::selection {
+   @apply bg-pink-600 text-black;
+}
+input {
+   @apply bg-transparent text-2xl mb-3 mt-2 border-b-2 outline-none p-2 hover:border-pink-600 focus:border-pink-600 hover:text-pink-600 focus:text-pink-600  transition-all ease-linear delay-300
+}
+a {
+
+}

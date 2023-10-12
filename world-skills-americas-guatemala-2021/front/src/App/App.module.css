@@ -1,0 +1,52 @@
+.app__window {
+   @apply grid ;
+   grid-template-columns: 5fr 1fr
+}
+.game__area {
+   @apply  bg-gray-900  min-h-screen flex justify-center items-center flex-col;
+}
+.game__area__cards {
+   @apply grid grid-cols-5;
+}
+
+.card {
+   @apply flex justify-center items-center flex-col p-1 bg-gray-900 w-36 h-36 m-2 cursor-pointer hover:brightness-100 brightness-95 transition-all delay-200 ease-linear shadow-md hover:shadow-pink-600  rounded-md shadow-pink-50;
+   transition: all .3s linear;
+}
+.cardRotate {
+   transform: rotate(180deg);
+}
+@keyframes rotate {
+  0% {
+   transform: rotate(0deg)
+  }
+  50% {
+   transform: rota(180deg);
+  }
+  100% {
+   transform: rotate(360deg)
+  }
+}
+span {
+   @apply transition-all delay-200 ease-linear;
+}
+.card:hover span {
+   @apply text-pink-600 
+}
+.card img {
+   @apply w-full h-full  rounded-md; 
+}
+.stats__header__count {
+
+}
+
+/* stats */
+.stats {
+   @apply  bg-gray-800  min-h-screen;
+}
+.stats__header {
+   @apply  w-full p-4 
+}
+.stats__header span {
+   @apply bg-pink-600 p-2 font-bold rounded-lg text-3xl
+}
